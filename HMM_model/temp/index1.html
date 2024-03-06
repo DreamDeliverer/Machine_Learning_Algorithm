@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" >
+        <title>ML for Time series data</title>
+        
+    </head>
+    
+    <body>
+        <div>Home
+        <h1>Analysis of time series data</h1>
+            <form action = "{{url_for('predict')}}" method = "POST">
+                <br>
+            start_Date: <input type="datetime-local" id="date_s" name="date_s" >
+            <br><br> 
+                <br>
+            end_Date: <input type="datetime-local" id="date_e" name="date_e" >
+            <br><br> 
+            Company_id: <input type="number" name="Company_id", placeholder="Company_id" required/>
+            <br><br>
+            Process_id: <input type="number" name="Process_id", placeholder="Process_id" required/>
+            <br><br>  
+            Subprocess_id: <input type="number" name="Subprocess_id", placeholder="Subprocess_id" required/>
+            <br><br>
+            Equipment_id: <input type="number" name="Equipment_id", placeholder="Equipment_id" required/>
+            <br><br>
+                
+                
+                
+                <button type = "changes" class="btn btn-primary btn-block btn-large"> Group the value</button>
+
+                <br>
+                <br>
+                
+                 <img src="data:image/png;base64, {{ image }}" width="500" height="250" alt="graph"> 
+                 
+        </div>
+    </body>
+</html>
